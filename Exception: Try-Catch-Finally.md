@@ -1,7 +1,7 @@
 ##   Exception 
 
-✅ Exception Handling <br> 
-✅ Exception Handling কীভাবে কাজ করে?
+✅ <b>Exception Handling </b> <br> 
+✅ <b>Exception Handling কীভাবে কাজ করে? </b>
 
 🔹 1. try Block – সন্দেহজনক কোড রাখা হয়
 
