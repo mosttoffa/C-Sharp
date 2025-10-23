@@ -1,7 +1,6 @@
 ## Garbage Collector (GC) 
 
 ✅ <b>Garbage Collector (GC) কী? </b> <br> 
-
 Garbage Collector হলো .NET CLR (Common Language Runtime)-এর একটা built-in memory manager।  <br> 
 এটার কাজ হলো — <br> 
 
