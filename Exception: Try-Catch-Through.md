@@ -9,5 +9,16 @@ Exception মানে error condition। অর্থাৎ প্রোগ্�
  * Database connection fail
  * Invalid casting
 
+<b> Built-in Exception কী ? </b>  <br> 
+
+Built-in Exception মানে — যেগুলো .NET Framework নিজের ভেতরেই define করা আছে (আমাদের define করতে হয় না)। এই Exception গুলো System.Exception class থেকে derive করা। <br>
+<b>Namespace: </b>  
+ * System
+ * System.IO
+ * System.Net
+ * System.Data
+ * System.Xml
+
+
 
 
