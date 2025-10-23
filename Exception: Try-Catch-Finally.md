@@ -301,7 +301,23 @@ KeyNotFoundException	    | Dictionary key নেই	  | dict["xyz"];
  </pre>
 
 
+✅ Exception Logging Example <br> 
+<pre>
+ try
+{
+    // risky code
+}
+catch (Exception ex)
+{
+    // Error log file e লিখে রাখা
+    File.AppendAllText("error_log.txt", 
+        $"{DateTime.Now}: {ex.GetType().Name} - {ex.Message}\n");
 
+    Console.WriteLine("Something went wrong. Please contact support.");
+}
+-- 🔸 এখানে error টা user থেকে লুকিয়ে রাখছো, কিন্তু developer হিসেবে log file এ সংরক্ষণ করছো —
+এটাই professional approach.
+</pre>
 
 
 
