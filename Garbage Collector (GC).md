@@ -56,16 +56,6 @@ Object Created ➡ Referenced ➡ Used ➡ Unused ➡ GC Detects ➡ Finalize �
 
 
 
-
-
-
-
-✅ <b>Garbage Collector (GC) কী? </b> <br> 
-Garbage Collector হলো .NET CLR (Common Language Runtime)-এর একটা built-in memory manager।  <br> 
-এটার কাজ হলো — <br> 
-“Automatically detect and free up memory that is no longer used by the program.” <br> 
-অর্থাৎ, যখন তোমার প্রোগ্রামে কোনো object আর দরকার নেই, GC সেই object এর memory automatically reclaim করে নেয়, যাতে memory leak না হয়।  <br> 
-
 🔷 <b> কেন Garbage Collector দরকার? </b> 
 
  * Developer memory management থেকে মুক্ত
@@ -76,8 +66,7 @@ Garbage Collector হলো .NET CLR (Common Language Runtime)-এর একট�
 C#-এর garbage collector মূলত নিচের ৩-ধাপের classic algorithm-এর উপর ভিত্তি করে কাজ করে, যেটাকে বলা হয়
 > Mark–and–Sweep–Compact Algorithm (Generational GC version)
 
-Garbage Collection = ৩টি ধাপে কাজ করে
-
+✅ Garbage Collection = ৩টি ধাপে কাজ করে- 
 1️⃣ Mark Phase → কে কে এখনো বেঁচে আছে (alive / reachable object) তা খুঁজে বের করে
 2️⃣ Sweep Phase → বাকি মৃত (unreachable) object গুলোর memory ফাঁকা করে
 3️⃣ Compact Phase → ফাঁকা জায়গাগুলো সরিয়ে memory contiguous করে
