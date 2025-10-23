@@ -182,8 +182,8 @@ UnauthorizedAccessException => অনুমতি ছাড়া resource access S
 ৫.TimeoutException => নির্ধারিত সময় অতিক্রম হলে
 
 ৬.ApplicationException => custom application-level exception base (not recommended)
-
-🔄 <b>Dispose() কী? </b> 
+<br> 
+🔄 <b>Dispose() কী? </b>  <br>
 ✅ সংজ্ঞা (Definition):
 
 Dispose() হলো একটি method, যা unmanaged resources (যেমন: file handles, database connections, network sockets ইত্যাদি) release করার জন্য ব্যবহৃত হয়। <br> 
