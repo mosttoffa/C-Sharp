@@ -70,15 +70,17 @@ finally
 Console.WriteLine("Resource  Clean !");
 }
 </pre>
-🔍<b> InnerException কীভাবে কাজ করে? </b> 
-InnerException C# এর Exception class এর একটি property, যা একটি exception এর ভেতরে আরেকটি আসল exception কে ধরে রাখে।
+🔍<b> InnerException কীভাবে কাজ করে? </b>  <br> 
+InnerException C# এর Exception class এর একটি property, যা একটি exception এর ভেতরে আরেকটি আসল exception কে ধরে রাখে। <br> 
 
-এটি তখনই দরকার হয়, যখন কোনো বড় বা complex error ঘটলে, আমরা সেই মূল ভুল (root cause) বা আসল exception জানার চেষ্টা করি।
+এটি তখনই দরকার হয়, যখন কোনো বড় বা complex error ঘটলে, আমরা সেই মূল ভুল (root cause) বা আসল exception জানার চেষ্টা করি। 
 
-✅ কেন InnerException দরকার?
+✅ <b>কেন InnerException দরকার? </b>
 👉 ধরুন আপনি একটি ফাইল read করছেন, কিন্তু সে ফাইলটি পাওয়া যাচ্ছে না। এর কারণে একটি FileNotFoundException হবে। আপনি যদি এর ওপর আরেকটি custom exception throw করেন, তাহলে সেই মূল exception যেন হারিয়ে না যায়—এই জন্য InnerException ব্যবহার করা হয়।
 
-উদারন : try
+উদারন :
+<pre> 
+try
 
 {
 
@@ -105,11 +107,11 @@ catch (ApplicationException ex)
 Console.WriteLine("Main Exception: " + ex.Message);
 Console.WriteLine("Root Cause (InnerException): " + ex.InnerException.Message);
 }
+</pre>
+✅ <b>Common Built-in Exception Classes in C# </b> <br>
+<b>Exception Class Hierarchy : </b><br> 
 
-✅ Common Built-in Exception Classes in C#
-Exception Class Hierarchy :
-
-📌 System.Exception সব exception ক্লাসের মূল ভিত্তি (base class)। base class এর মাধ্যমে সকল exception গুলো তৈরি হয়।
+📌 System.Exception সব exception ক্লাসের মূল ভিত্তি (base class)। base class এর মাধ্যমে সকল exception গুলো তৈরি হয়। <br>
 
 ⚙️ System.SystemException
 Exception Class এবং ব্যাখ্যা
