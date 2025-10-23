@@ -243,8 +243,8 @@ string line = reader.ReadLine();
 
 // এখানে reader.Dispose() অটোমেটিক কল হয়ে যাবে
 </pre>
-➡️ <b>using ব্লক শেষ হলে Dispose() নিজে থেকেই call হয়ে যায়, কোনো resource leak হয় না। </b> 
-
+➡️ <b>using ব্লক শেষ হলে Dispose() নিজে থেকেই call হয়ে যায়, কোনো resource leak হয় না। </b>  <br> 
+Object এর lifecycle শেষে (explicitly বা using দিয়ে) চলে. 
 
 <br> <br> <br> <br> 
 
