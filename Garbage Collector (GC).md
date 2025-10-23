@@ -1,6 +1,6 @@
 ## Garbage Collector (GC) In C#
 
-🧹 Garbage Collector (GC) কিভাবে কাজ করে?
+🧹 Garbage Collector (GC) কিভাবে কাজ করে? <br> 
 ✅ সংজ্ঞা (Definition):
 
 Garbage Collector (GC) হলো .NET Framework বা .NET Runtime-এর একটি built-in memory management system, যা স্বয়ংক্রিয়ভাবে অপ্রয়োজনীয় বা অব্যবহৃত object গুলোকে memory থেকে মুছে ফেলে।
@@ -67,8 +67,8 @@ C#-এর garbage collector মূলত নিচের ৩-ধাপের cla
 > Mark–and–Sweep–Compact Algorithm (Generational GC version)
 
 ✅ Garbage Collection = ৩টি ধাপে কাজ করে-  <br>
-1️⃣ Mark Phase → কে কে এখনো বেঁচে আছে (alive / reachable object) তা খুঁজে বের করে
-2️⃣ Sweep Phase → বাকি মৃত (unreachable) object গুলোর memory ফাঁকা করে
+1️⃣ Mark Phase → কে কে এখনো বেঁচে আছে (alive / reachable object) তা খুঁজে বের করে <br> 
+2️⃣ Sweep Phase → বাকি মৃত (unreachable) object গুলোর memory ফাঁকা করে <br> 
 3️⃣ Compact Phase → ফাঁকা জায়গাগুলো সরিয়ে memory contiguous করে
  
 
