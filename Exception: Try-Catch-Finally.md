@@ -282,6 +282,7 @@ Background service	  |         ✅	                           |   Prevent servic
  </pre>
 
 🔷 <b>Common Built-in Exception Classes </b> 
+<pre>
 Exception	               | ঘটে কেন	             | উদাহরণ
 DivideByZeroException	   | শূন্য দিয়ে ভাগ	        | int x = 10 / 0;
 NullReferenceException	  | null object access	  | string s = null; s.Length;
@@ -296,7 +297,7 @@ TimeoutException	সময় শেষ	long DB query
 OutOfMemoryException	মেমোরি ফুরিয়ে গেছে	বড় object তৈরি
 StackOverflowException	infinite recursion	function self call
 KeyNotFoundException	Dictionary key নেই	dict["xyz"];
-
+ </pre>
 
 
 
