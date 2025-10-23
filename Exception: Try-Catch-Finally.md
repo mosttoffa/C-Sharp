@@ -75,8 +75,8 @@ InnerException C# এর Exception class এর একটি property, যা �
 
 এটি তখনই দরকার হয়, যখন কোনো বড় বা complex error ঘটলে, আমরা সেই মূল ভুল (root cause) বা আসল exception জানার চেষ্টা করি। 
 
-✅ <b>কেন InnerException দরকার? </b>
-👉 ধরুন আপনি একটি ফাইল read করছেন, কিন্তু সে ফাইলটি পাওয়া যাচ্ছে না। এর কারণে একটি FileNotFoundException হবে। আপনি যদি এর ওপর আরেকটি custom exception throw করেন, তাহলে সেই মূল exception যেন হারিয়ে না যায়—এই জন্য InnerException ব্যবহার করা হয়।
+✅ <b>কেন InnerException দরকার? </b> <br> 
+👉 ধরুন আপনি একটি ফাইল read করছেন, কিন্তু সে ফাইলটি পাওয়া যাচ্ছে না। এর কারণে একটি FileNotFoundException হবে। আপনি যদি এর ওপর আরেকটি custom exception throw করেন, তাহলে সেই মূল exception যেন হারিয়ে না যায়—এই জন্য InnerException ব্যবহার করা হয়। <br> 
 
 উদারন :
 <pre> 
@@ -113,16 +113,13 @@ Console.WriteLine("Root Cause (InnerException): " + ex.InnerException.Message);
 
 📌 System.Exception সব exception ক্লাসের মূল ভিত্তি (base class)। base class এর মাধ্যমে সকল exception গুলো তৈরি হয়। <br>
 
-⚙️ System.SystemException
-Exception Class এবং ব্যাখ্যা
-
+⚙️ System.SystemException <br> 
+Exception Class এবং ব্যাখ্যা  <br> 
 ১.ArgumentException => method-এ invalid argument দিলে যেমনঃ Path.GetFileName("*illegal?name");
-
 ২.ArgumentNullException => null argument দিলে যেমনঃ File.ReadAllText(null);
-
 ৩.ArgumentOutOfRangeException => সীমার বাইরে argument দিলে যেমনঃ list[100] যখন list-এ এত item নেই অথ্যাৎ list[101] যদি এক্সেস করতে চাই তখন এরর দিবে ।
 
-✅ ৪.ArithmeticException
+✅ <b>৪.ArithmeticException </b> 
 
 └── DivideByZeroException => int x = 10 / 0; শূন্য দিয়ে ভাগ করলে
 
@@ -144,7 +141,7 @@ Exception Class এবং ব্যাখ্যা
 
 ১২.ObjectDisposedException => dispose হয়ে যাওয়া object ব্যবহার করলে
 
-📂 System.IO.IOException
+📂 <b>System.IO.IOException </b> <br>
 ফাইল, ডিরেক্টরি এবং ড্রাইভ সংক্রান্ত Input/Output exception।
 
 ১.IOException => সাধারন IO ত্রুটি
@@ -159,10 +156,10 @@ Exception Class এবং ব্যাখ্যা
 
 ৬.EndOfStreamException => stream-এর শেষ পৌঁছে গেলে
 
-🔒 Security and Access Exceptions
+🔒 <b>Security and Access Exceptions </b> <br>
 UnauthorizedAccessException => অনুমতি ছাড়া resource access SecurityException => security policy লঙ্ঘন হলে
 
-⏱ Async & Threading Exceptions
+⏱ <b>Async & Threading Exceptions </b>
 
 ১.OperationCanceledException => async কাজ cancel হলে
 
@@ -172,7 +169,7 @@ UnauthorizedAccessException => অনুমতি ছাড়া resource access S
 
 ৪.SynchronizationLockException => ভুল ভাবে lock ব্যবহারে
 
-🧩 Other Notable Exceptions
+🧩 <b>Other Notable Exceptions </b> 
 ১.KeyNotFoundException => Dictionary-তে key না পেলে
 
 ২.NotImplementedException => method implement না করলে
@@ -185,18 +182,19 @@ UnauthorizedAccessException => অনুমতি ছাড়া resource access S
 
 ৬.ApplicationException => custom application-level exception base (not recommended)
 
-🔄 Dispose() কী?
+🔄 <b>Dispose() কী? </b> 
 ✅ সংজ্ঞা (Definition):
 
-Dispose() হলো একটি method, যা unmanaged resources (যেমন: file handles, database connections, network sockets ইত্যাদি) release করার জন্য ব্যবহৃত হয়।
+Dispose() হলো একটি method, যা unmanaged resources (যেমন: file handles, database connections, network sockets ইত্যাদি) release করার জন্য ব্যবহৃত হয়। <br> 
 
 এটি IDisposable ইন্টারফেসের অংশ — যার মূল উদ্দেশ্য হলো মেমোরি বা রিসোর্স লিক প্রতিরোধ করা।
 
-✅ Managed resource => string, int, arrays => .NET CLR (Garbage Collector)
+✅ <b>Managed resource =></b> string, int, arrays => .NET CLR (Garbage Collector)
 
-✅ Unmanaged resources => File handles, DB connections, Win32 API resources,network sockets => Dispose() দিয়ে release করতে হবে ।
+✅ <b>Unmanaged resources =></b> File handles, DB connections, Win32 API resources,network sockets => Dispose() দিয়ে release করতে হবে ।
 
-📦 IDisposable Interface:
+📦 <b>IDisposable Interface: </b> 
+<pre>
 public interface IDisposable {
 
 //  Performs application-defined tasks associated with freeing, 
@@ -205,11 +203,11 @@ releasing, or resetting
 
 void Dispose();
 }
-
-যে ক্লাসটি IDisposable ইন্টারফেস implement করে, সেটি Dispose() method define করে unmanaged resource free করতে পারে।
+ </pre>
+যে ক্লাসটি IDisposable ইন্টারফেস implement করে, সেটি Dispose() method define করে unmanaged resource free করতে পারে। <br> 
 
 উদাহরণ:
-
+<pre>
 public class MyResource:IDisposable
 
 {
@@ -233,8 +231,9 @@ public class MyResource:IDisposable
 
  }
 }
-
-🔐 Using using Statement:
+ </pre>
+🔐 <b>Using using Statement: </b> 
+<pre> 
 using (var reader = new StreamReader("data.txt"))
 
 {
@@ -243,17 +242,11 @@ string line = reader.ReadLine();
 }
 
 // এখানে reader.Dispose() অটোমেটিক কল হয়ে যাবে
-
-➡️ using ব্লক শেষ হলে Dispose() নিজে থেকেই call হয়ে যায়, কোনো resource leak হয় না।
-
-
+</pre>
+➡️ <b>using ব্লক শেষ হলে Dispose() নিজে থেকেই call হয়ে যায়, কোনো resource leak হয় না। </b> 
 
 
-
-
-
-
-
+<br> <br> <br> <br> 
 
 
 
