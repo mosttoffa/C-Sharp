@@ -115,9 +115,9 @@ Console.WriteLine("Root Cause (InnerException): " + ex.InnerException.Message);
 
 ⚙️ System.SystemException <br> 
 Exception Class এবং ব্যাখ্যা  <br> 
-১.ArgumentException => method-এ invalid argument দিলে যেমনঃ Path.GetFileName("*illegal?name");
-২.ArgumentNullException => null argument দিলে যেমনঃ File.ReadAllText(null);
-৩.ArgumentOutOfRangeException => সীমার বাইরে argument দিলে যেমনঃ list[100] যখন list-এ এত item নেই অথ্যাৎ list[101] যদি এক্সেস করতে চাই তখন এরর দিবে ।
+১.ArgumentException => method-এ invalid argument দিলে যেমনঃ Path.GetFileName("*illegal?name"); <br>
+২.ArgumentNullException => null argument দিলে যেমনঃ File.ReadAllText(null);  <br> 
+৩.ArgumentOutOfRangeException => সীমার বাইরে argument দিলে যেমনঃ list[100] যখন list-এ এত item নেই অথ্যাৎ list[101] যদি এক্সেস করতে চাই তখন এরর দিবে । 
 
 ✅ <b>৪.ArithmeticException </b> 
 
