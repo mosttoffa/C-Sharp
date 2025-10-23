@@ -51,11 +51,11 @@ Garbage Collector নিচের কাজগুলো করে:
 
 6️⃣ Memory Reclaimed অপ্রয়োজনীয় object গুলো সরানো হলে সেই জায়গায় নতুন object রাখা যায়। এভাবে memory leak কমে যায়।
 
-📊 চিত্র (Flow Summary):
+📊 চিত্র (Flow Summary): <br>
 Object Created ➡ Referenced ➡ Used ➡ Unused ➡ GC Detects ➡ Finalize ➡ Memory Freed
 
 
-
+<br> <br>
 🔷 <b> কেন Garbage Collector দরকার? </b> 
 
  * Developer memory management থেকে মুক্ত
