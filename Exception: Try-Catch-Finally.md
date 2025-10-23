@@ -1,7 +1,8 @@
 ##   Exception 
 
 ✅ <b>Exception Handling </b> <br> 
-✅ <b>Exception Handling কীভাবে কাজ করে? </b>
+✅ <b>Exception Handling কীভাবে কাজ করে? </b> <br>
+C# এ Exception Handling-এর প্রধান ৩টি অংশ: try block, catch block, finally block 
 
 🔹 <b>1. try Block – সন্দেহজনক কোড রাখা হয় </b>
 <pre>
@@ -279,6 +280,24 @@ Calculation	         |         ⚠️ মাঝে মাঝে	                
 UI Event Handler	    |         ✅	                           |   Prevent app crash on user action
 Background service	  |         ✅	                           |   Prevent service crash and log error
  </pre>
+
+🔷 <b>Common Built-in Exception Classes </b> 
+Exception	               | ঘটে কেন	             | উদাহরণ
+DivideByZeroException	   | শূন্য দিয়ে ভাগ	        | int x = 10 / 0;
+NullReferenceException	  | null object access	  | string s = null; s.Length;
+IndexOutOfRangeException	| array limit cross	   | arr[5] যখন arr এ ৩টা element
+FormatException	         | invalid format	      | int.Parse("abc");
+FileNotFoundException	   | ফাইল না পাওয়া	       | File.ReadAllText("missing.txt");
+InvalidCastException	    | ভুল type cast	       | (int)"hello";
+ArgumentNullException	   | null argument	File.ReadAllText(null);
+OverflowException	numeric overflow	checked { int x = int.MaxValue + 1; }
+InvalidOperationException	invalid state	e.g., closed connection use
+TimeoutException	সময় শেষ	long DB query
+OutOfMemoryException	মেমোরি ফুরিয়ে গেছে	বড় object তৈরি
+StackOverflowException	infinite recursion	function self call
+KeyNotFoundException	Dictionary key নেই	dict["xyz"];
+
+
 
 
 
