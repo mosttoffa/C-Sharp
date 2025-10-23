@@ -182,7 +182,7 @@ UnauthorizedAccessException => অনুমতি ছাড়া resource access S
 ৫.TimeoutException => নির্ধারিত সময় অতিক্রম হলে
 
 ৬.ApplicationException => custom application-level exception base (not recommended)
-<br> 
+<br> <br>
 🔄 <b>Dispose() কী? </b>  <br>
 ✅ সংজ্ঞা (Definition):
 
