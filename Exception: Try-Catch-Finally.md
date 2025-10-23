@@ -267,11 +267,18 @@ Built-in Exception মানে — যেগুলো .NET Framework নিজ�
 🔷 <b>catch : </b> যদি try block এ exception ঘটে, তাহলে control catch এ আসে। এখানে তুমি exception handle করতে পারো (log করা, custom message দেওয়া, retry ইত্যাদি)। <br> 
 🔷 <b>finally : </b> finally block সর্বদা execute হয় — error হোক বা না হোক। এখানে clean-up কাজ করা হয়: যেমন file close করা, DB connection dispose করা। <br> 
 
-
-
-
-
-
+✅ <b>কখন use করবে </b> 
+<pre>
+ পরিস্থিতি	            |     Exception Handling দরকার?	       |        কারণ
+------------------------------------------------------------------------------------------------------------
+User Input	          |         ✅ হ্যাঁ	                       |   Invalid data (format, null, etc.)
+File Handling	       |         ✅ হ্যাঁ	                       |   File না পাওয়া, permission denied
+Database Query	      |         ✅ হ্যাঁ	                       |   DB connection fail, timeout, invalid data
+Network Request	     |         ✅ হ্যাঁ	                       |   Connection lost, API unavailable
+Calculation	         |         ⚠️ মাঝে মাঝে	                 |   Divide by zero, overflow
+UI Event Handler	    |         ✅	                           |   Prevent app crash on user action
+Background service	  |         ✅	                           |   Prevent service crash and log error
+ </pre>
 
 
 
