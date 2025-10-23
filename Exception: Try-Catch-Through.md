@@ -19,6 +19,27 @@ Built-in Exception মানে — যেগুলো .NET Framework নিজ�
  * System.Data
  * System.Xml
 
+✅ <b>Major Built-in Exception গুলো (Categorizedভাবে) </b>  <br> 
+🔷 <b>Common System Exceptions : </b> 
+<pre>
+  Exception	                      |    Description
+-------------------------------------------------------------------------------------
+System.Exception	                |  Base class of all exceptions
+System.SystemException	          |  Base class for all system-level exceptions
+System.ApplicationException	      |  Base class for application-defined exceptions
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
