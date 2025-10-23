@@ -66,7 +66,7 @@ Object Created ➡ Referenced ➡ Used ➡ Unused ➡ GC Detects ➡ Finalize �
 C#-এর garbage collector মূলত নিচের ৩-ধাপের classic algorithm-এর উপর ভিত্তি করে কাজ করে, যেটাকে বলা হয়
 > Mark–and–Sweep–Compact Algorithm (Generational GC version)
 
-✅ Garbage Collection = ৩টি ধাপে কাজ করে- 
+✅ Garbage Collection = ৩টি ধাপে কাজ করে-  <br>
 1️⃣ Mark Phase → কে কে এখনো বেঁচে আছে (alive / reachable object) তা খুঁজে বের করে
 2️⃣ Sweep Phase → বাকি মৃত (unreachable) object গুলোর memory ফাঁকা করে
 3️⃣ Compact Phase → ফাঁকা জায়গাগুলো সরিয়ে memory contiguous করে
