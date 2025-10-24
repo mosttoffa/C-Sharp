@@ -1,6 +1,6 @@
 ## Type Casting Or Data Type Conversion in C#
 
-🔷 Two Types of Conversion : 1. Implicit Conversion and 2. Explicit Conversion 
+🔷 Two Types of Conversion : 1. Implicit Conversion and 2. Explicit Conversion  <br> 
 👉 Basic Example: 
 <pre> 
   ---
