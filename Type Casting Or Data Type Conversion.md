@@ -24,7 +24,7 @@
   int c = int.Parse(a) + int.Parse(b);  <b>explicit data type conversion  </b> 
   অথবা, <b>.Parse()</b> 
   float d = float.Parse(a) + float.Parse(b);
-  🔸<b>Parse সব সময় String নেয়, সেটা int বা double যেটাই হোকনা কেনো।  </b>
+  🔸<b>Parse সব সময় String নেয়/return করে, সেটা int বা double যেটাই হোকনা কেনো।  </b>
   
 </pre>
 
