@@ -8,8 +8,9 @@
   float b = a;  // <b>implicit data type conversion </b>
   ---
   float b = 20.345f;
+  // এইভাবে - <b>(int)b </b> 
   int a = (int)b;  // <b>explicit data type conversion </b>
-  অথবা, 
+  অথবা, <b>Convert.ToInt32()</b>
   int a = Convert.ToInt32(b); // <b>explicit data type conversion  </b>
 </pre>
 👉 Another Example: 
@@ -17,10 +18,11 @@
   ---
   string a = "40";
   string b = "50";
+  // <b>Convert.ToInt32() </b>
   int c = Convert.ToInt32(a) + Convert.ToInt32(b);  <b>explicit data type conversion  </b>
-  অথবা, 
+  অথবা,  <b>.Parse()</b>
   int c = int.Parse(a) + int.Parse(b);  <b>explicit data type conversion  </b> 
-  অথবা,
+  অথবা, <b>.Parse()</b> 
   float d = float.Parse(a) + float.Parse(b);
   <b>Parse সব সময় String নেয়, সেটা int বা double যেটাই হোকনা কেনো।  </b>
   
