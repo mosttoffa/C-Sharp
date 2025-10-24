@@ -1,7 +1,7 @@
 ## Type Casting Or Data Type Conversion in C#
 
 🔷 Two Types of Conversion : 1. Implicit Conversion and 2. Explicit Conversion  <br> 
-🔸কি কি Ways তে Casting করা যায় তার Example : <b> এমন-(int)b , Convert.ToInt32(), .Parse() </b>
+🔸কি কি Ways তে Casting করা যায় তার Example : <b> এমন-(int)b , Convert.ToInt32(), .Parse() </b> <br>
 👉 Basic Example: 
 <pre> 
   ---
