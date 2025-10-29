@@ -44,6 +44,12 @@ h1.Speak();   // Output: Mostofa is speaking.
     Name ও Age → Class এর properties
     Speak() → Class এর method
 </pre>
+🧠 <b>কিভাবে Property তে Value Assign হয় </b> <br> 
+🔸 Step 1: Object Create করা
+<pre>Student s1 = new Student();</pre>
+🔸 Step 2: Property তে Value Assign করা
+<pre>s1.Name = "Mostofa";</pre>
+
 🧾 <b>Property তে value assign করার ৩টা উপায়: </b> <br> 
 1️⃣ Direct Assignment (Object তৈরি হওয়ার পরে):
 <pre>
