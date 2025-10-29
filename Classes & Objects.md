@@ -1,7 +1,7 @@
 ## OOP (Object Oriented Programming) 
 🧱 <b>Class কী? </b> <br> 
 ➡️ The Blueprint of Object. Class হলো একটি blueprint (নকশা) যেটার সাহায্যে তুমি object তৈরি করো। <br> 
-  > 🔹 Definition: A class is a user-defined data type that contains fields, properties, methods, constructors, events, etc. It defines how an object will behave and what data it will hold.
+  > Definition: A class is a user-defined data type that contains fields, properties, methods, constructors, events, etc. It defines how an object will behave and what data it will hold. <br>
 🔷<b>একটা class define করে — </b> 
  * কী কী property (data) থাকবে
  * কী কী method (behavior) থাকবে <br>
