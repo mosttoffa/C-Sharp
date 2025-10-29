@@ -3,7 +3,11 @@
 ➡️ The Blueprint of Object. Class হলো একটি blueprint (নকশা) যেটার সাহায্যে তুমি object তৈরি করো। <br> 
 🔷<b>একটা class define করে — </b> 
  * কী কী property (data) থাকবে
- * কী কী method (behavior) থাকবে <br> 
+ * কী কী method (behavior) থাকবে <br>
+  > 🔹 Definition:
+A class is a user-defined data type that contains fields, properties, methods, constructors, events, etc.
+It defines how an object will behave and what data it will hold.
+
 🔹 উদাহরণ দিয়ে বললে — একটা “Human” class ভাবো। প্রতিটা মানুষ object, কিন্তু তাদের একটা common structure আছে — name, age, talk(), walk() ইত্যাদি। <br> 
 <pre>
 public class Human
