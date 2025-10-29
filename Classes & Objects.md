@@ -54,6 +54,28 @@ h1.Speak();   // Output: Mostofa is speaking.
 🔸 Step 2: Property তে Value Assign করা
 <pre>s1.Name = "Mostofa";</pre>
 
+🔧 <b>Constructor — </b> Object Initialize করার Systematic উপায় <br> 
+🔹 Constructor হলো class-এর ভিতরে একটা বিশেষ method, যেটি object তৈরি হওয়ার সময় automatically call হয়।
+<pre>
+public class Car
+{
+    public string Brand;
+    public int Speed;
+
+    public Car(string brand, int speed)
+    {
+        Brand = brand;
+        Speed = speed;
+    }
+}
+ব্যবহার: 
+  Car car1 = new Car("BMW", 200);
+🔹 এখানে constructor:
+    Object তৈরি হওয়ার সময় mandatory initialization enforce করে।
+    Memory allocate হওয়ার পরই চলে।
+</pre>
+
+
 🧾 <b>Property তে value assign করার ৩টা উপায়: </b> <br> 
 1️⃣ Direct Assignment (Object তৈরি হওয়ার পরে):
 <pre>
@@ -88,9 +110,58 @@ Console.WriteLine(h.Name); // Rafi
 🎯 Class কেন ব্যবহার করা হয়? : Code Reusability, Encapsulation-Data (property) ও Function (method) একসাথে রাখা যায়, Data Protection- Property কে private/public করে control করা যায়. Maintainability- বড় প্রোজেক্টে কোড manage করা সহজ হয়. Real World Mapping- বাস্তব জগতের entity (Student, Product, Employee) কে কোডে উপস্থাপন করা যায়. 
 </p>
 
+⚙️ <b>Static vs Instance Members </b> 
+ * Instance Member	: Object তৈরি করতে হয় ব্যবহার করার আগে
+ * Static Member	: Class এর সাথে সরাসরি যুক্ত থাকে, object লাগে না <br> 
 
-🔷 Type: Class and Objects are Reference Type
+🧭 <b>this Keyword — Refers to Current Instance </b> 
+<pre>
+public class Student
+{
+    public string Name;
+    public Student(string Name)
+    {
+        this.Name = Name; // 'this' current object কে নির্দেশ করছে
+    }
+}
+
+</pre>
 
 
-Object is an Instance of a class.
+🔷 Type: Class and Objects are Reference Type <br> 
+
+✅<b>Object is an Instance of a class. <b> <br>
+✅ <b>How Objects Exist in Memory: </b> 
+ * Reference types (class) → heap এ store হয়
+ * Value types (struct, int, bool) → stack এ store হয়
+ * Object create হলে CLR “Managed Heap” এ যায়
+ * GC (Garbage Collector) periodically unused object clean করে
+
+✅ <b>Object Composition vs Inheritance </b> 
+ * Inheritance: “is-a” relation (Car : Vehicle)
+ * Composition: “has-a” relation (Car has Engine)
+
+✅ <b>Anonymous Object (Quick Instance)</b>
+<pre>
+var product = new { Name = "Laptop", Price = 80000 };
+Console.WriteLine(product.Name);
+</pre>
+
+🧠 <b>Memory Concept: Stack vs Heap (CLR view) </b>
+✅ <b>Stack Memory</b> <br>
+ * Short-lived storage (used for local variables, method calls)
+ * Automatically managed — cleared when function returns
+ * Fast allocation and deallocation
+
+✅ <b>Heap Memory </b> 
+ * Used for dynamic objects (like class, array, etc.)
+ * Managed by Garbage Collector (GC)
+ * Slower, but flexible and persists beyond method calls
+
+
+
+
+
+
+
 
