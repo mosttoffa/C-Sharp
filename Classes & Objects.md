@@ -33,6 +33,7 @@ Class ব্যবহার করা হয় real-world system বা concept-�
 
 ➡️ যখন তুমি কোনো class থেকে একটা object তৈরি করো, তখন সেটাকে বলে instance।
  > “Every instance is an object, but when we say instance — we mean the relationship between the object and its class.”
+
 🔹 অর্থাৎ Class হলো নকশা, আর Instance হলো বাস্তব object।
 উদাহরণ:
 <pre>
