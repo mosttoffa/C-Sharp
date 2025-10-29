@@ -27,7 +27,19 @@ public class Human
 ➡️ যখন তুমি কোনো class থেকে একটা object তৈরি করো, তখন সেটাকে বলে instance।
 
 🔹 অর্থাৎ Class হলো নকশা, আর Instance হলো বাস্তব object।
+উদাহরণ:
+<pre>
+Human h1 = new Human();   // Human class-এর একটা instance
+h1.Name = "Mostofa";
+h1.Age = 25;
+h1.Speak();   // Output: Mostofa is speaking.
 
+    🧠 এখানে:
+    Human → Class
+    h1 → Human-এর একটা instance (object)
+    Name ও Age → Class এর properties
+    Speak() → Class এর method
+</pre>
 
 
 🔷 Type: Class and Objects are Reference Type
