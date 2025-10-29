@@ -11,7 +11,7 @@ public class Human
     // Properties (data)
     public string Name { get; set; }
     public int Age { get; set; }
-
+    🔹<b> এইখানে Name, Age হলো Human class এর Property </b>
     // Method (behavior)
     public void Speak()
     {
