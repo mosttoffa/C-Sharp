@@ -18,6 +18,8 @@ public class Human
         Console.WriteLine($"{Name} is speaking.");
     }
 }
+
+🔹এই Human class একটা template — এখন এর object বানানো যাবে।    
  </pre>
 
 
