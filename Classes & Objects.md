@@ -136,7 +136,7 @@ public class Student
  * Value types (struct, int, bool) → stack এ store হয়
  * Object create হলে CLR “Managed Heap” এ যায়
  * GC (Garbage Collector) periodically unused object clean করে <br>
-✅  <b> Memory Behavior (CLR) </b>
+✅<b> Memory Behavior (CLR) : </b>
  * Stack memory allocation = LIFO (Last In, First Out)
  * Heap memory = managed by Garbage Collector (GC)
  * Reference type destroyed only when no reference points to it
