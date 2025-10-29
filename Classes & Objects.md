@@ -22,6 +22,13 @@ public class Human
 🔹এই Human class একটা template — এখন এর object বানানো যাবে।    
  </pre>
 
+<b>👤 Instance কী? </b> <br>
+
+➡️ যখন তুমি কোনো class থেকে একটা object তৈরি করো, তখন সেটাকে বলে instance।
+
+🔹 অর্থাৎ Class হলো নকশা, আর Instance হলো বাস্তব object।
+
+
 
 🔷 Type: Class and Objects are Reference Type
 
