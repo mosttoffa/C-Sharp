@@ -2,7 +2,8 @@
 🧱 <b>Class কী? </b> <br> 
 ➡️ The Blueprint of Object. Class হলো একটি blueprint (নকশা) যেটার সাহায্যে তুমি object তৈরি করো। <br> 
   > Definition: A class is a user-defined data type that contains fields, properties, methods, constructors, events, etc. It defines how an object will behave and what data it will hold.
-> Memory Concept: Class নিজে মেমোরিতে থাকে না। যখন তুমি new keyword ব্যবহার করো, তখন CLR (Common Language Runtime) heap memory তে object allocate করে। For Example: Car হলো শুধু blueprint (নকশা)। এখন instance তৈরি না করলে এর memory allocate হয় না।
+
+Memory Concept: Class নিজে মেমোরিতে থাকে না। যখন তুমি new keyword ব্যবহার করো, তখন CLR (Common Language Runtime) heap memory তে object allocate করে। For Example: Car হলো শুধু blueprint (নকশা)। এখন instance তৈরি না করলে এর memory allocate হয় না।
 
 🔷<b>একটা class define করে — </b> 
  * কী কী property (data) থাকবে
