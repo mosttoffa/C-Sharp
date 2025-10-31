@@ -170,6 +170,9 @@ Console.WriteLine(product.Name);
 🧱 <b>constructor</b> <br>
 
 A constructor in C# is a special method used to initialize objects of a class. It has the same name as the class and does not have a return type. Constructors are automatically called when an object of the class is created using the new keyword. <br>
+🔷Constructor কেন দরকার? <br> 
+কারণ constructor ছাড়া object তৈরি হলেও তার property গুলোর মান uninitialized (null বা 0) থেকে যায়।
+Constructor ব্যবহার করলে আমরা object তৈরি করার সময়ই সেটাকে meaningful data দিতে পারি। <br>
 Here's an example demonstrating different types of constructors in C#: 
 <pre>
 using System;
