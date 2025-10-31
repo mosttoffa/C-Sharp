@@ -167,7 +167,94 @@ Console.WriteLine(product.Name);
  * Managed by Garbage Collector (GC)
  * Slower, but flexible and persists beyond method calls
 
+🧱 <b>constructor</b> <br>
 
+A constructor in C# is a special method used to initialize objects of a class. It has the same name as the class and does not have a return type. Constructors are automatically called when an object of the class is created using the new keyword. <br>
+Here's an example demonstrating different types of constructors in C#: 
+<pre>
+using System;
+
+public class Car
+{
+    // Fields to store car properties
+    public string Model;
+    public int Year;
+    public string Color;
+
+    // 1. Default Constructor (no parameters)
+    // This constructor initializes fields with default values.
+    public Car()
+    {
+        Model = "Unknown";
+        Year = DateTime.Now.Year; // Current year
+        Color = "White";
+        Console.WriteLine("Default constructor called.");
+    }
+
+    // 2. Parameterized Constructor
+    // This constructor takes parameters to initialize fields when an object is created.
+    public Car(string model, int year, string color)
+    {
+        Model = model;
+        Year = year;
+        Color = color;
+        Console.WriteLine("Parameterized constructor called.");
+    }
+
+    // 3. Constructor Overloading (another parameterized constructor)
+    // You can have multiple constructors with different parameter lists.
+    public Car(string model, int year)
+    {
+        Model = model;
+        Year = year;
+        Color = "Black"; // Default color if not specified
+        Console.WriteLine("Overloaded constructor (model, year) called.");
+    }
+
+    // Method to display car details
+    public void DisplayCarDetails()
+    {
+        Console.WriteLine($"Model: {Model}, Year: {Year}, Color: {Color}");
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Create an object using the default constructor
+        Car myCar1 = new Car();
+        myCar1.DisplayCarDetails();
+        Console.WriteLine("------------------------------");
+
+        // Create an object using the parameterized constructor
+        Car myCar2 = new Car("Tesla Model S", 2023, "Red");
+        myCar2.DisplayCarDetails();
+        Console.WriteLine("------------------------------");
+
+        // Create an object using the overloaded constructor
+        Car myCar3 = new Car("Ford Mustang", 2024);
+        myCar3.DisplayCarDetails();
+    }
+}
+
+
+-- Explanation:
+
+    Default Constructor:
+    public Car()
+        This constructor is called when you create a Car object without providing any arguments (e.g., Car myCar1 = new Car();).
+        It initializes the Model to "Unknown", Year to the current year, and Color to "White". 
+    Parameterized Constructor:
+    public Car(string model, int year, string color)
+        This constructor is called when you create a Car object and pass arguments matching its parameter list (e.g., Car myCar2 = new Car("Tesla Model S", 2023, "Red");).
+        It uses the provided arguments to initialize the corresponding fields. 
+    Constructor Overloading:
+    public Car(string model, int year)
+        This demonstrates constructor overloading, where you have multiple constructors with the same name but different parameter lists.
+        This constructor allows creating a Car object by only specifying the model and year, with the color defaulting to "Black".
+  
+</pre>
 
 
 
