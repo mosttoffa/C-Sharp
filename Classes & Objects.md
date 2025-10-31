@@ -30,7 +30,11 @@ public class Human
 Class ব্যবহার করা হয় real-world system বা concept-কে প্রোগ্রামিংয়ের মধ্যে বাস্তবভাবে উপস্থাপন করার জন্য।
 এটা আমাদের data (তথ্য) এবং behavior (কাজ করার ধরন) — দুটোকে একসাথে ধরে রাখে।
 </p>
-<b>👤 Instance কী? </b> <br>
+<p>
+🎯 Class কেন ব্যবহার করা হয়? : Code Reusability, Encapsulation-Data (property) ও Function (method) একসাথে রাখা যায়, Data Protection- Property কে private/public করে control করা যায়. Maintainability- বড় প্রোজেক্টে কোড manage করা সহজ হয়. Real World Mapping- বাস্তব জগতের entity (Student, Product, Employee) কে কোডে উপস্থাপন করা যায়. 
+</p>
+
+<b>🧱 Instance কী? </b> <br>
 
 ➡️ যখন তুমি কোনো class থেকে একটা object তৈরি করো, তখন সেটাকে বলে instance।
  > “Every instance is an object, but when we say instance — we mean the relationship between the object and its class.”
@@ -55,7 +59,7 @@ h1.Speak();   // Output: Mostofa is speaking.
 🔸 Step 2: Property তে Value Assign করা
 <pre>s1.Name = "Mostofa";</pre>
 
-🔧 <b>Constructor — </b> Object Initialize করার Systematic উপায় <br> 
+🧱 <b>Constructor — </b> Object Initialize করার Systematic উপায় <br> 
 🔹 Constructor হলো class-এর ভিতরে একটা বিশেষ method, যেটি object তৈরি হওয়ার সময় automatically call হয়।
 <pre>
 public class Car
@@ -107,9 +111,7 @@ public class Human
 Human h = new Human("Rafi", 30);
 Console.WriteLine(h.Name); // Rafi
 </pre>
-<p>
-🎯 Class কেন ব্যবহার করা হয়? : Code Reusability, Encapsulation-Data (property) ও Function (method) একসাথে রাখা যায়, Data Protection- Property কে private/public করে control করা যায়. Maintainability- বড় প্রোজেক্টে কোড manage করা সহজ হয়. Real World Mapping- বাস্তব জগতের entity (Student, Product, Employee) কে কোডে উপস্থাপন করা যায়. 
-</p>
+
 
 ⚙️ <b>Static vs Instance Members </b> 
  * Instance Member	: Object তৈরি করতে হয় ব্যবহার করার আগে
