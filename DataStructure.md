@@ -158,7 +158,6 @@ public class CollectionDemo
 
 
 
-কোথায় Generic, কোথায় Non-Generic use হয়? 
 
 
 
