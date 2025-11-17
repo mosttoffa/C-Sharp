@@ -140,6 +140,21 @@ public class CollectionDemo
 
 
 
+```
+মূল জেনেরিক কালেকশন:
+   * List<T>
+   * Dictionary<TKey, TValue>
+   * HashSet<T>
+   * Queue<T>
+   * Stack<T>
+```
+```
+মূল নন-জেনেরিক কালেকশন:
+   * ArrayList
+   * Hashtable
+   * Stack
+   * Queue
+```
 
 
 
