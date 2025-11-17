@@ -156,7 +156,46 @@ public class CollectionDemo
    * Queue
 ```
 
-
+* Arrays: Fixed-size collections of elements of the same type, accessed by an index.
+```
+    int[] numbers = new int[5];
+    numbers[0] = 10;
+```
+* Lists (List<T>): Dynamic, resizable collections of elements of a specific type. They provide methods for adding, removing, and searching elements.
+```
+    List<string> names = new List<string>();
+    names.Add("Alice");
+    names.Remove("Alice");
+```
+* Dictionaries (Dictionary<TKey, TValue>): Collections of key-value pairs, where each key must be unique. They offer efficient lookup by key.
+```
+    Dictionary<int, string> users = new Dictionary<int, string>();
+    users.Add(1, "Bob");
+    string userName = users[1];
+```
+* HashSets (HashSet<T>): Collections of unique elements, optimized for fast membership testing and set operations (union, intersection).
+```
+    HashSet<int> uniqueNumbers = new HashSet<int>();
+    uniqueNumbers.Add(5);
+    bool containsFive = uniqueNumbers.Contains(5);
+```
+* Stacks (Stack<T>): Last-In, First-Out (LIFO) collections, where elements are added and removed from the top.
+```
+    Stack<char> charStack = new Stack<char>();
+    charStack.Push('A');
+    char poppedChar = charStack.Pop();
+```
+* Queues (Queue<T>): First-In, First-Out (FIFO) collections, where elements are added to the back and removed from the front.
+```
+    Queue<string> messageQueue = new Queue<string>();
+    messageQueue.Enqueue("Message 1");
+    string receivedMessage = messageQueue.Dequeue();
+```
+* Linked Lists (LinkedList<T>): Collections where elements are stored in nodes, each containing a value and a reference to the next (and optionally previous) node. They are efficient for insertions and deletions in the middle.
+```
+    LinkedList<double> scores = new LinkedList<double>();
+    scores.AddLast(95.5);
+```
 
 
 
