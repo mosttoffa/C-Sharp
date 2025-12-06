@@ -9,7 +9,7 @@ LINQ Apply করতে হলে তাকে IEnumerable বা IQuerable এ�
 LING ২ ভাবে use করা যায়ঃ 
 1. Method Structure 
 2. Query Structure
-
+<br> 
 1. Method Structure :
    - Where Clause এর ভিতরে Lambda Expression নেয়
    - Where Return করে ১টা IEnumerable  .ToList();
