@@ -10,6 +10,6 @@ LING ২ ভাবে use করা যায়ঃ
 1. Method Structure 
 2. Query Structure
 <br> 
-1. Method Structure :
+1. Method Structure : <br> 
    - Where Clause এর ভিতরে Lambda Expression নেয়
    - Where Return করে ১টা IEnumerable  .ToList();
